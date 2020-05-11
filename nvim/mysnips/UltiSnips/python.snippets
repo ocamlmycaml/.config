@@ -1,0 +1,8 @@
+snippet importsc "Spark context variables"
+from pyspark import SparkContext
+from pyspark.sql import SQLContext
+$0
+
+sc = SparkContext(appName="$1")
+hc = HiveContext(sc)
+endsnippet
